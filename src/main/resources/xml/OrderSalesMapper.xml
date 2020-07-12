@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.basket.basketproject.workservice.mapper.OrderSalesMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.basket.basketproject.workservice.entity.OrderSalesPO">
+        <id column="order_code" property="orderCode" />
+        <result column="consumer" property="consumer" />
+        <result column="station_code" property="stationCode" />
+        <result column="product_num" property="productNum" />
+        <result column="total_num" property="totalNum" />
+        <result column="total_price" property="totalPrice" />
+        <result column="delivery_to" property="deliveryTo" />
+        <result column="delivery_phone" property="deliveryPhone" />
+        <result column="state" property="state" />
+        <result column="create_date" property="createDate" />
+        <result column="approval_date" property="approvalDate" />
+        <result column="stock_out_date" property="stockOutDate" />
+        <result column="update_date" property="updateDate" />
+    </resultMap>
+
+</mapper>

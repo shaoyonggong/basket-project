@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: wechat-mall-admin
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3307/fruit_vegetable_basket?seUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+mybatis-plus:
+  mapper-locations: classpath:xml/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

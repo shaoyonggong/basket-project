@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.basket.basketproject.workservice.mapper.IdentificationBaseInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.basket.basketproject.workservice.entity.IdentificationBaseInfoPO">
+        <id column="id" property="id" />
+        <result column="identification_code" property="identificationCode" />
+        <result column="identification_name" property="identificationName" />
+        <result column="identification_data" property="identificationData" />
+        <result column="state" property="state" />
+        <result column="create_by" property="createBy" />
+        <result column="create_date" property="createDate" />
+        <result column="update_by" property="updateBy" />
+        <result column="update_date" property="updateDate" />
+    </resultMap>
+
+</mapper>
